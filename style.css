@@ -7,6 +7,106 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-/* Add styles here! */
+/* Add styles here!
+Spacing
+This app uses an 8px unit. All spaces are a multiple of 8px:
+
+8px
+16px
+24px
+32px
+48px
+64px
+96px
+128px
+When it comes to max widths (eg. the maximum width of the card), arbitrary values can be used.
+
+Font
+1 font is used in this project: Lato. It is already included in the stylesheet.
+
+For font sizes, the rem unit should be used.
+
+The scale is:
+
+1rem
+1.25rem
+1.5rem
+2rem
+Because the base font size is 18px, this works out in pixels to:
+
+18px
+22.5px
+27px
+36px
+Color palette
+Primary (green):
+
+hsl(160deg, 100%, 30%)
+Secondary (gold):
+
+hsl(45deg, 100%, 50%) (lighter)
+hsl(45deg, 100%, 40%) (darker)
+Grays:
+
+hsl(0deg, 0%, 0%) (black)
+hsl(0deg, 0%, 10%) (very dark)
+hsl(0deg, 0%, 30%) (dark)
+hsl(0deg, 0%, 40%) (medium)
+hsl(0deg, 0%, 60%) (light)
+hsl(0deg, 0%, 100%) (white)
+
+ */
+
+.max-width-wrapper {
+  max-width: 520px;
+  margin: auto;
+}
+
+header{
+  padding:72px 0 32px 24px;
+  margin-left: -24px;
+  border-bottom: 6px solid hsl(0deg, 0%, 40%) ;
+
+}
+
+.title {
+  title: 2rem;
+}
+
+.intro-chunk p{
+  margin-top: 40px;
+  max-width: 30ch;
+  line-height: 1.5;
+}
+
+p strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+main{
+  background-color: hsl(0deg, 0%, 60%) ;
+  padding:24px 32px 360px 32px;
+  width: 100%;
+}
+
+
+.card{
+  background-color: hsl(0deg, 0%, 100%);
+  border-top: 1px solid hsl(0deg, 0%, 100%);
+  border-bottom: 6px solid hsl(0deg, 0%, 40%);
+  margin: 24px -32px;
+  padding: 0 24px;
+}
+
+.indented-heading{
+  font-size: 1.25rem;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 6px solid hsl(45deg, 100%, 40%) ;
+  max-width: fit-content;
+  padding: 12px 40px;
+  margin: 8px -40px;
+}
